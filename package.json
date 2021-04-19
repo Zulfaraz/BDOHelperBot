@@ -4,7 +4,9 @@
   "description": "Este es un Bot creado apartir de la API de discord JS tambien integrando Typescript en su desarrollo.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build":"tsc",
+    "start":"node dist/BDOHelperBotIndex.js",
+    "dev" : "nodemon -e ts --exec \"npm run build && npm start\""
   },
   "repository": {
     "type": "git",
@@ -16,5 +18,14 @@
   "bugs": {
     "url": "https://github.com/Zulfaraz/BDOHelperBot/issues"
   },
-  "homepage": "https://github.com/Zulfaraz/BDOHelperBot#readme"
+  "homepage": "https://github.com/Zulfaraz/BDOHelperBot#readme",
+  "dependencies": {
+    "discord.js": "^12.5.3"
+  },
+  "devDependencies": {
+    "@types/node": "^14.14.41",
+    "dotenv": "^8.2.0",
+    "nodemon": "^2.0.7",
+    "typescript": "^4.2.4"
+  }
 }
