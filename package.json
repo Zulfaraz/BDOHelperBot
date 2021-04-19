@@ -1,0 +1,20 @@
+{
+  "name": "BDOHelperBot",
+  "version": "1.0.0",
+  "description": "Este es un Bot creado apartir de la API de discord JS tambien integrando Typescript en su desarrollo.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Zulfaraz/BDOHelperBot.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Zulfaraz/BDOHelperBot/issues"
+  },
+  "homepage": "https://github.com/Zulfaraz/BDOHelperBot#readme"
+}

@@ -7,3 +7,7 @@ Este es un Bot creado apartir de la API de discord JS tambien integrando Typescr
 Este comando es para instalar el archivo de configuracion de Typescript en estado de desarrollo
 
 ⚙️ npm init --y -D o ⚙️ npm i --y -D
+
+Este comando es para instalar el node JS integrado en estado de desarrollo.
+
+⚙️ node js 
