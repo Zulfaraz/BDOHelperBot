@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "build":"tsc",
-    "start":"node dist/BDOHelperBotIndex.js",
+    "start":"node ./dist/BDOHelperBotIndex.js",
     "dev" : "nodemon -e ts --exec \"npm run build && npm start\""
   },
   "repository": {

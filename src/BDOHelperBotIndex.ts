@@ -1,11 +1,6 @@
-import Discord,{ Client } from 'discord.js'
-import { config } from 'dotenv'
-config()
+import BDOHelperBotConectDiscordClass from "./config/BDOHelperBotConectDiscord"
+import BDOHelperBotConfig from "./config/BDOHelperBotConfig"
 
-const BDOHelperBot: Client = new Client()
+const BDOHelperBotIndex: BDOHelperBotConectDiscordClass = new BDOHelperBotConectDiscordClass()
 
-BDOHelperBot.on('ready', async() =>{
-    console.log("The servicies of the BDOHelperBot is on!")
-})
-
-BDOHelperBot.login(process.env.BDOHElPERBOT_TOKEN)
+BDOHelperBotIndex.BDOHelperBotloginStart(BDOHelperBotConfig.BDOHelperToken)
