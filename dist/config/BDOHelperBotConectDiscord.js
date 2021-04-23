@@ -20,8 +20,9 @@ class BDOHelperBotConectDiscordClass extends discord_js_1.Client {
         this.BDOHelperBotConectDiscord = new discord_js_1.Client();
         this.BDOHelperBotController = new BDOHelperBotController_1.default();
     }
-    BDOHelperBotloginStart(BDOHelperToken) {
+    BDOHelperBotloginStart(BDOHelperToken, BDOHelperBotUri) {
         if (this.BDOHelperBotConectDiscord.login(BDOHelperToken)) {
+            console.log(BDOHelperBotUri);
             this.BDOHelperBotInitialize();
             this.BDOHelperBotloginStatus();
         }
@@ -30,9 +31,18 @@ class BDOHelperBotConectDiscordClass extends discord_js_1.Client {
         return console.log("The services to BDOHelperBot is On!");
     }
     BDOHelperBotInitialize() {
+        this.BDOHelperBotConectDiscord.on("ready", () => __awaiter(this, void 0, void 0, function* () {
+            let DataJson = { rol: [{ id: "11456446", name: "Data1" }] };
+            for (var data in DataJson) {
+                console.log(data.indexOf("rol:id"));
+            }
+        }));
         this.BDOHelperBotConectDiscord.on('message', (message) => __awaiter(this, void 0, void 0, function* () {
             this.BDOHelperBotController.setOutMSGResponseString(message.content);
             console.log(this.BDOHelperBotController.getOutMSGResponseString());
+            if (message.author) {
+                message.channel.send(this.BDOHelperBotController.getOutMSGResponseString());
+            }
         }));
     }
 }
