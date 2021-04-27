@@ -1,3 +1,5 @@
+<!-- @format -->
+
 # 👾 BDOHelperBot 👾
 
 Este es un Bot creado apartir de la API de discord JS tambien integrando Typescript en su desarrollo.
@@ -20,7 +22,7 @@ Este comando es para instalar las dependencias de Typescript en formato desarrol
 
 ⚙️ npm i typescript -D
 
-Este comando es para incluir el archivo de configuracion de Typescript y las dependencias del mismo 
+Este comando es para incluir el archivo de configuracion de Typescript y las dependencias del mismo
 
 ⚙️ npx tsc --init
 

@@ -1,0 +1,33 @@
+-------------------------------------------------------------------
+ Error Type: MessageEmbedError ❌ 
+-------------------------------------------------------------------
+ Description: ▼ 
+
+ BDO_Error_MessageEmbedError_2021_3_2_8_3_74
+
+ "TypeError: Cannot read property 'BDOMsgpropiertier' of undefined"
+--------------------------------------------------------------------------------------------------------------------------------------
+ Error Type: MessageEmbedError ❌ 
+-------------------------------------------------------------------
+ Description: ▼ 
+
+ BDO_Error_MessageEmbedError_2021_3_2_8_3_74
+
+ "TypeError: Cannot read property 'BDOMsgpropiertier' of undefined"
+--------------------------------------------------------------------------------------------------------------------------------------
+ Error Type: MessageEmbedError ❌ 
+-------------------------------------------------------------------
+ Description: ▼ 
+
+ BDO_Error_MessageEmbedError_2021_3_2_8_3_74
+
+ "TypeError: Cannot read property 'BDOMsgpropiertier' of undefined"
+--------------------------------------------------------------------------------------------------------------------------------------
+ Error Type: MessageEmbedError ❌ 
+-------------------------------------------------------------------
+ Description: ▼ 
+
+ BDO_Error_MessageEmbedError_2021_3_2_8_3_74
+
+ "TypeError: Cannot read property 'BDOMsgpropiertier' of undefined"
+-------------------------------------------------------------------

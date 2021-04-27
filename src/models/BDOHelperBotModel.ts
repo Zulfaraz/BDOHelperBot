@@ -1,10 +1,4 @@
-import BDOHelperBotConectDiscordClass from '../config/BDOHelperBotConectDiscord'
-import BDOHelperBotControllerClass from "../controller/BDOHelperBotController"
+/** @format */
 
-const BDOHelperBotModel: BDOHelperBotConectDiscordClass = new BDOHelperBotConectDiscordClass()
-
-class BDOHelperBotModelClass {
-    private BDOHelperBotModelController: BDOHelperBotControllerClass = new BDOHelperBotControllerClass()
-  
-}
-export default BDOHelperBotModelClass
+class BDOHelperBotModelClass {}
+export default BDOHelperBotModelClass;

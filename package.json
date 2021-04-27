@@ -4,9 +4,9 @@
   "description": "Este es un Bot creado apartir de la API de discord JS tambien integrando Typescript en su desarrollo.",
   "main": "index.js",
   "scripts": {
-    "build":"tsc",
-    "start":"node ./dist/BDOHelperBotIndex.js",
-    "dev" : "nodemon -e ts --exec \"npm run build && npm start\""
+    "build": "tsc",
+    "start": "node ./dist/BDOHelperBotIndex.js",
+    "dev": "nodemon -e ts --exec \"npm run build && npm start\""
   },
   "repository": {
     "type": "git",

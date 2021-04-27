@@ -1,14 +1,123 @@
 "use strict";
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
 Object.defineProperty(exports, "__esModule", { value: true });
+/** @format */
+const BDOHelperBotInformationJSON_1 = __importDefault(require("../config/BDOHelperBotInformationJSON"));
 class BDOHelperBotControllerClass {
-    constructor() {
-        this.MSG = null;
+    // Contructor
+    constructor(BDODataQuery, BDODataUserName, BDODataUserUrl, BDODataNameAlert, BDODataJSON, BDODataTimer) {
+        this.BDODataQuery = BDODataQuery;
+        this.BDODataQuery = BDODataUserName;
+        this.BDODataQuery = BDODataUserUrl;
+        this.BDODataNameAlert = BDODataNameAlert;
+        this.BDODataJSON = BDODataJSON;
+        this.BDODataTimer = BDODataTimer;
     }
-    setOutMSGResponseString(MSG = '') {
-        this.MSG = MSG;
+    //Setter Data
+    /**
+     *
+     * @param BDODataQuery
+     */
+    set_BDODataQuery(BDODataQuery) {
+        this.BDODataQuery = BDODataQuery;
     }
-    getOutMSGResponseString() {
-        return this.MSG;
+    /**
+     *
+     * @param BDODataUserName
+     */
+    set_BDODataUserName(BDODataUserName) {
+        this.BDODataUserName = BDODataUserName;
+    }
+    /**
+     *
+     * @param BDODataUserUrl
+     */
+    set_BDODataUserUrl(BDODataUserUrl) {
+        this.BDODataUserUrl = BDODataUserUrl;
+    }
+    /**
+     *
+     * @param BDODataNameAlert
+     */
+    set_BDODataNameAlert(BDODataNameAlert) {
+        this.BDODataNameAlert = BDODataNameAlert;
+    }
+    /**
+     *
+     * @param BDODataJSON
+     */
+    set_BDODataJSON(BDODataJSON) {
+        this.BDODataJSON = BDODataJSON;
+    }
+    /**
+     *
+     * @param BDODataTimer
+     */
+    set_BDODataTimer(BDODataTimer) {
+        this.BDODataTimer = BDODataTimer;
+    }
+    //Getter Data
+    /**
+     *
+     * @returns BDODataQuery
+     */
+    get_BDODataQuery() {
+        return this.BDODataQuery;
+    }
+    /**
+     *
+     * @returns BDODataUserName
+     */
+    get_BDODataUserName() {
+        return this.BDODataUserName;
+    }
+    /**
+     *
+     * @returns BDODataUserUrl
+     */
+    get_BDODataUserUrl() {
+        return this.BDODataUserUrl;
+    }
+    /**
+     *
+     * @returns BDODataNameAlert
+     */
+    get_BDODataNameAlert() {
+        return this.BDODataNameAlert;
+    }
+    /**
+     *
+     * @returns BDODataJSON
+     */
+    get_BDODataJSON() {
+        return this.BDODataJSON;
+    }
+    /**
+     *
+     * @returns BDODataTimer
+     */
+    get_BDODataTimer() {
+        return this.BDODataTimer;
+    }
+    // Processing to app abstract data
+    /**
+     *
+     * @returns
+     */
+    BDOProcesToJSONDataInformation() {
+        const DATAINFORMATION = new BDOHelperBotInformationJSON_1.default();
+        const DATACLEAN = DATAINFORMATION.BDOHelperBotBuilderMessegeEmbed(this.get_BDODataQuery());
+        this.set_BDODataJSON(DATACLEAN.filter(Boolean));
+        return this.get_BDODataJSON();
+    }
+    //
+    BDOProcesToJSONAlertInformation() {
+        const DATAINFORMATION = new BDOHelperBotInformationJSON_1.default();
+        const DATACLEAN = DATAINFORMATION.BDOHelperBotBuilderMessegeAlertLog(this.get_BDODataQuery());
+        this.set_BDODataJSON(DATACLEAN.filter(Boolean));
+        return this.get_BDODataJSON();
     }
 }
 exports.default = BDOHelperBotControllerClass;
