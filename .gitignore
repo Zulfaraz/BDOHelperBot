@@ -1,6 +1,6 @@
 .env
-./dist/
-./node_module/
-./src/templateStructure/
-./src/JSON/
-./log/
+node_modules/
+jspm_packages/
+dist/
+src/templatestructure
+src/json
