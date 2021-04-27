@@ -1,12 +1,10 @@
 /** @format */
 
-import { timeStamp } from "console";
-import Discord, { Client, Message } from "discord.js";
 import BDOHelperBotControllerClass from "../controller/BDOHelperBotController";
 import BDOHelperBotView from "../views/BDOHelperBotView";
 import BDOHelperBotViewAlert from "../views/BDOHelperBotViewAlert";
 import BDOHelperBotGenerateToLogsSystemClass from "./BDOHelperBotGenerateToLogSystem";
-import { MessageEmbed } from "discord.js";
+import Discord, { Client, Message } from "discord.js";
 
 class BDOHelperBotEventsInitializerClass extends Client {
   private BDOHelperBotC = new BDOHelperBotControllerClass();
